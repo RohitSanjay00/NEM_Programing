@@ -9,7 +9,7 @@ let common = nem.model.objects.create('common')(
 );
 
 var transferTransaction = nem.model.objects.create("transferTransaction")(
-"Senders Address", 10, "Hello");
+"Senders Address", Amount of XEM you want to transfer, "Message you want to send along");
 
 let preparedTransaction = nem.model.transactions.prepare('transferTransaction')(
   common, transferTransaction, nem.model.network.data.testnet.id
