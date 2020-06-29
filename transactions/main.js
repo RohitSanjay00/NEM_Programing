@@ -5,11 +5,11 @@ let endpoint = nem.model.objects.create('endpoint')(
 );
 
 let common = nem.model.objects.create('common')(
-  'SolarGridX','d14f9fe9d02b2e61a2a80ae443191ac9473cf6514cb44d7527075dca2e30a906'
+  'Password','PrivateKey'
 );
 
 var transferTransaction = nem.model.objects.create("transferTransaction")(
-"TC4O7TF3KPCYXKPOYB6VHLMOJJFRFWI5PWLPETAH", 10, "Hello");
+"Senders Address", Amount of XEM you want to transfer, "Message you want to send along");
 
 let preparedTransaction = nem.model.transactions.prepare('transferTransaction')(
   common, transferTransaction, nem.model.network.data.testnet.id
